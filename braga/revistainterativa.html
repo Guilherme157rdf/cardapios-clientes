@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Julian Claro Braga - Revista Interativa 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        :root {
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f8f4e9;
+            --accent: #c19a6b;
+        }
+
+        body {
+            background: linear-gradient(to bottom, var(--light), #e9e2d0);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a1a1a"/><circle cx="20" cy="20" r="3" fill="%23d4af37" opacity="0.3"/><circle cx="50" cy="40" r="2" fill="%23d4af37" opacity="0.2"/><circle cx="80" cy="70" r="4" fill="%23d4af37" opacity="0.25"/></svg>');
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: #ddd;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            background: var(--gold);
+            color: var(--dark);
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 30px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .months-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .month-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .month-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+        }
+
+        .month-header {
+            background: var(--gold);
+            color: var(--dark);
+            padding: 1.2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .month-content {
+            padding: 1.5rem;
+            min-height: 180px;
+        }
+
+        .month-content p {
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background: var(--accent);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .cover-quote {
+            font-style: italic;
+            text-align: center;
+            margin: 2.5rem 0;
+            font-size: 1.4rem;
+            color: var(--gold);
+            position: relative;
+        }
+
+        .cover-quote::before,
+        .cover-quote::after {
+            content: """;
+            font-size: 3rem;
+            position: absolute;
+            color: var(--gold);
+            opacity: 0.6;
+        }
+
+        .cover-quote::before {
+            top: -20px;
+            left: -10px;
+        }
+
+        .cover-quote::after {
+            bottom: -40px;
+            right: -10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background: var(--dark);
+            color: #ccc;
+            margin-top: 4rem;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-top: 1rem;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .months-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Julian Claro Braga</h1>
+            <div class="subtitle">Revista Interativa — Ano 2025</div>
+            <div class="tagline">Um ano extraordinário do início ao fim</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>
+                Nesta edição especial, Julian Claro Braga relembra e celebra cada mês de 2025 — um ano repleto de conquistas, aprendizados, conexões e momentos inesquecíveis. 
+                De janeiro a dezembro, cada página revela por que este ano foi verdadeiramente <span class="highlight">inesquecível</span>.
+            </p>
+        </div>
+
+        <div class="cover-quote">
+            “2025 não foi apenas bom — foi transformador. Cada mês trouxe uma nova razão para agradecer.”
+        </div>
+
+        <div class="months-grid" id="monthsContainer">
+            <!-- Os meses serão inseridos por JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Julian Claro Braga – Todos os direitos reservados</p>
+        <span class="signature">Julian Claro Braga</span>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #777;">
+            Revista digital interativa • Publicada em 14 de dezembro de 2025
+        </p>
+    </footer>
+
+    <script>
+        const meses = [
+            {
+                nome: "Janeiro",
+                descricao: "Começamos o ano com energia renovada! Lançamento de um novo projeto pessoal e viagem inspiradora para as montanhas. Tudo indicava: 2025 seria especial."
+            },
+            {
+                nome: "Fevereiro",
+                descricao: "Amor no ar! Conexões profundas, novas amizades e um reencontro inesperado que trouxe alegria genuína. O carnaval foi de reflexão e celebração."
+            },
+            {
+                nome: "Março",
+                descricao: "Crescimento profissional acelerado. Uma proposta inesperada abriu portas para colaborações internacionais. Ainda assim, mantive o foco no equilíbrio."
+            },
+            {
+                nome: "Abril",
+                descricao: "Tempo de colher frutos. Resultados de esforços anteriores se concretizaram. Também dediquei tempo à família — essencial para recarregar as energias."
+            },
+            {
+                nome: "Maio",
+                descricao: "Mergulhei em aprendizados: cursos, leituras e mentorias. Cada dia trouxe uma nova perspectiva. A clareza mental nunca esteve tão presente."
+            },
+            {
+                nome: "Junho",
+                descricao: "Junho surpreendeu com oportunidades únicas. Fui convidado para palestrar em um evento global. Autoconfiança em alta e propósito renovado."
+            },
+            {
+                nome: "Julho",
+                descricao: "Férias merecidas! Viajei para a costa portuguesa, onde escrevi ideias para o futuro. Silêncio, mar e introspecção — o trio perfeito para recomeçar."
+            },
+            {
+                nome: "Agosto",
+                descricao: "Retorno com força total. Novos parceiros, novos sonhos. Iniciei um movimento comunitário local que já impacta dezenas de vidas. Gratidão infinita."
+            },
+            {
+                nome: "Setembro",
+                descricao: "Mês de colheita emocional. Superei antigos medos e celebrei vitórias internas. A paz interior se tornou meu maior patrimônio."
+            },
+            {
+                nome: "Outubro",
+                descricao: "Criatividade explodiu! Desenvolvi uma série de conteúdos que tocaram milhares. A arte voltou a fluir com naturalidade e propósito."
+            },
+            {
+                nome: "Novembro",
+                descricao: "Reconhecimento veio em forma de prêmios e mensagens sinceras. Mas o maior presente foi ver meu trabalho inspirar outros a seguirem seus caminhos."
+            },
+            {
+                nome: "Dezembro",
+                descricao: "Encerramos com celebração, reflexão e planejamento. Cada conquista foi celebrada com quem realmente importa. 2025 foi, sem dúvida, <span class='highlight'>o melhor ano da minha vida</span>."
+            }
+        ];
+
+        const container = document.getElementById('monthsContainer');
+        meses.forEach(mes => {
+            const card = document.createElement('div');
+            card.className = 'month-card';
+            card.innerHTML = `
+                <div class="month-header">${mes.nome}</div>
+                <div class="month-content">
+                    <p>${mes.descricao}</p>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>
+
